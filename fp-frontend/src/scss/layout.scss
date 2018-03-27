@@ -1,0 +1,111 @@
+//
+// Text
+// --------------------------------------------------
+
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
+.text-medium {
+  font-size: 14px;
+}
+.text-large {
+  font-size: 20px;
+}
+.black-text {
+  color: $black-text;
+}
+.gray-text {
+  color: $gray-text;
+}
+.gray-light-text {
+  color: $gray-light-text;
+}
+.red-text {
+  color: $red-text;
+}
+.blue-text {
+  color: $blue-text;
+}
+.green-text {
+  color: $green-text;
+}
+.pink-text {
+  color: $pink-text;
+}
+.yellow-text {
+  color: $yellow-text;
+}
+.orange-text {
+  color: $orange-text;
+}
+
+.gutter {
+  &.top {
+    padding-top: $gutter-padding !important;
+  }
+}
+
+.gutter {
+  &.top {
+    padding-top: $gutter-padding !important;
+  }
+  &.right {
+    padding-right: $gutter-padding !important;
+  }
+  &.bottom {
+    padding-bottom: $gutter-padding !important;
+  }
+  &.left {
+    padding-left: $gutter-padding !important;
+  }
+  &.all {
+    padding: $gutter-padding !important;
+  }
+}
+.gutter-margin {
+  &.top {
+    margin-top: $gutter-margin !important;
+  }
+  &.right {
+    margin-right: $gutter-margin !important;
+  }
+  &.bottom {
+    margin-bottom: $gutter-margin !important;
+  }
+  &.left {
+    margin-left: $gutter-margin !important;
+  }
+  &.all {
+    margin: $gutter-margin !important;
+  }
+}
+.non-gutter {
+  &.top {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  &.right {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+  &.bottom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  &.left {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  &.all {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.vl {
+  border-left: 3px solid $black-light;
+  height: 20px;
+}

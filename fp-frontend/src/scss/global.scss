@@ -1,0 +1,33 @@
+// body {
+//   font-size: 3vw;
+// }
+
+// body, html { 
+//     overflow-x: hidden; 
+//     overflow-y: hidden;
+// }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fp-header {
+  background-color: blue;
+  // height: 35px;
+  flex-shrink: 0;
+}
+
+.fp-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fp-content {
+  flex-grow: 1;
+  overflow-x: auto;
+}

@@ -1,0 +1,197 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+$white:                  #fff;
+
+$black-darker:           #000;
+$black-dark:             #333;
+$black:                  #444;
+$black-light:            #666;
+$black-lighter:          #999;
+
+$gray-darker:            #ccc;
+$gray-dark:              #e8e8e8; //line border
+$gray:                   #f2f2f2; //heading bg //content bg
+$gray-light:             #f5f5f5; //table th td bg
+$gray-lighter:           #f8f8f8; //big panel bg
+
+$green:                  #74a632;
+$green-light:            #81be41;
+$green-lighter:          #d4f1d2;
+$red:                    #e21a23;
+$pink:                   #dc49a1;
+$pink-light:             #f5939f;
+$yellow-dark:            #d1c05f;
+$yellow:                 #eeaa00;
+$yellow-light:           #fefdcc;
+$yellow-lighter:         #fffcec;
+$orange:                 #f69234;
+$orange-dark:            #ff9900;
+$blue:                   #0099d6;
+$blue-light:             #d9edf7;
+$blue-dark:              #a8c3de;
+
+$black-text:             $black;
+$gray-text:              $black-lighter;
+$gray-light-text:        $gray-darker;
+$green-text:             $green;
+$red-text:               $red;
+$pink-text:              $pink;
+$yellow-text:            $yellow;
+$orange-text:            $orange;
+$blue-text:              $blue;
+
+$brand-primary:          $blue;
+$brand-secondary:        #f69234;
+$brand-thirdly:          $white;
+$brand-success:          #d4f1d2;
+$brand-info:             #ebf5fe;
+$brand-warning:          #fff9e9;
+$brand-danger:           #fdebeb;
+
+$tooltip-bg:             $white;
+$body-bg:                $white;
+$text-color:             $black;
+$link-color:             $brand-primary;
+$link-hover-color:       darken($link-color, 10%);
+$link-hover-decoration:  underline;
+
+$severe-border:          #ea5e60;
+$severe-bg:              #fc7d7f;
+$high-border:            #fcbc43;
+$high-bg:                #e5a52b;
+$elevated-border:        #f3e347;
+$elevated-bg:            #dfcf34;
+$guarded-border:         #54abec;
+$guarded-bg:             #82c8fc;
+$low-border:             #9bc521;
+$low-bg:                 #b4de39;
+$none-border:            #bebfc2;
+$none-bg:                $white;
+
+$font-url:               "..";
+$has:                    Helvetica, Arial, sans-serif;
+$din:                    din, Helvetica, Arial, sans-serif;
+$dinMed:                 dinMed, Helvetica, Arial, sans-serif;
+$proxima:                proxima, Helvetica, Arial, sans-serif;
+
+$font-family-base:       $din;
+
+$font-size-small:        12px;
+$font-size-base:         14px;
+$font-size-large:        16px;
+$font-size-h1:           22px;
+$font-size-h2:           20px;
+$font-size-h3:           18px;
+$font-size-h4:           16px;
+$font-size-h5:           14px;
+$font-size-h6:           12px;
+
+$line-height-base:       1.428571429; // 20/14
+$line-height-computed:   floor(($font-size-base * $line-height-base)); // ~20px
+
+$headings-font-family:   $proxima;
+$headings-font-weight:   500;
+$headings-line-height:   1.1;
+$headings-color:         inherit;
+
+$border-radius-base:     0;
+$input-border-radius:    $border-radius-base;
+$panel-border-radius:    $border-radius-base;
+$panel-heading-padding:  15px;
+
+$popup-padding:          15px;
+$gutter-padding:         15px;
+$gutter-margin:          15px;
+$table-padding:          10px 6px;
+$tab-padding:            12px;
+$dot-line-padding:       10px;
+
+$btn-font-weight:        normal;
+
+$btn-default-color:      #616c76;
+$btn-default-bg:         #e0e6eb;
+$btn-default-border:     darken($btn-default-bg, 5%);
+
+$btn-primary-color:      $white;
+$btn-primary-bg:         $brand-primary;
+$btn-primary-border:     darken($btn-primary-bg, 5%);
+
+$btn-secondary-color:    $white;
+$btn-secondary-bg:       $brand-secondary;
+$btn-secondary-border:   darken($btn-secondary-bg, 5%);
+
+$btn-thirdly-color:      $blue;
+$btn-thirdly-bg:         $brand-thirdly;
+$btn-thirdly-border:     $gray-darker;
+
+$btn-success-color:      $white;
+$btn-success-bg:         $brand-success;
+$btn-success-border:     darken($btn-success-bg, 5%);
+
+$btn-info-color:         $white;
+$btn-info-bg:            $brand-info;
+$btn-info-border:        darken($btn-info-bg, 5%);
+
+$btn-warning-color:      $white;
+$btn-warning-bg:         $brand-warning;
+$btn-warning-border:     darken($btn-warning-bg, 5%);
+
+$btn-danger-color:       $white;
+$btn-danger-bg:          $brand-danger;
+$btn-danger-border:      darken($btn-danger-bg, 5%);
+
+$state-success-text:             #3c763d;
+$state-success-bg:               $brand-success;
+$state-success-border:           darken($state-success-bg, 5%);
+
+$state-info-text:                #31708f;
+$state-info-bg:                  $brand-info;
+$state-info-border:              darken($state-info-bg, 7%);
+
+$state-warning-text:             #8a6d3b;
+$state-warning-bg:               $brand-warning;
+$state-warning-border:           darken($state-warning-bg, 5%);
+
+$state-danger-text:              #e21a23;
+$state-danger-bg:                $brand-danger;
+$state-danger-border:            darken($state-danger-bg, 5%);
+
+$alert-padding:               10px;
+$alert-border-radius:         $border-radius-base;
+$alert-link-font-weight:      bold;
+
+$alert-success-bg:            $state-success-bg;
+$alert-success-text:          $state-success-text;
+$alert-success-border:        $state-success-border;
+
+$alert-info-bg:               $state-info-bg;
+$alert-info-text:             $state-info-text;
+$alert-info-border:           $state-info-border;
+
+$alert-warning-bg:            $state-warning-bg;
+$alert-warning-text:          $state-warning-text;
+$alert-warning-border:        $state-warning-border;
+
+$alert-danger-bg:             $state-danger-bg;
+$alert-danger-text:           $state-danger-text;
+$alert-danger-border:         $state-danger-border;
+
+$pagination-color:                     $link-color;
+$pagination-bg:                        #fff;
+$pagination-border:                    #ddd;
+
+$pagination-hover-color:               $link-hover-color;
+$pagination-hover-bg:                  $gray-lighter;
+$pagination-hover-border:              #ddd;
+
+$pagination-active-color:              #fff;
+$pagination-active-bg:                 $brand-primary;
+$pagination-active-border:             $brand-primary;
+
+$pagination-disabled-color:            $gray-darker;
+$pagination-disabled-bg:               #fff;
+$pagination-disabled-border:           #ddd;
