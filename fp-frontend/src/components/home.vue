@@ -6,7 +6,7 @@
       <v-container>
         <v-layout align-center>
           <v-flex>
-            <v-btn outline large color="blue-grey darken-1">Go To History</v-btn>
+            <v-btn outline large color="blue-grey darken-1">History List</v-btn>
             <v-btn outline large color="blue-grey darken-1" @click="gotoPlan">
               Go To Plan
               <span slot="loader" class="custom-loader">

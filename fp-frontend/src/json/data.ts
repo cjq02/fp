@@ -22,8 +22,6 @@ const createItems: () => Array<IItem> = () => {
     return items;
 }
 
-export const muscleItems  = createItems();
-
 const createMuscles: () => Array<IMuscle> = () => [
     { muscleId: 201, muscleName: "Chest" },
     { muscleId: 202, muscleName: "Back" },
@@ -32,7 +30,7 @@ const createMuscles: () => Array<IMuscle> = () => [
     { muscleId: 205, muscleName: "Triceps" }
 ]
 
-export const createCategories = () => {
+const createCategories = () => {
     let data = _.groupBy(createItems(), "muscleId");
     let result: any[] = [];
     let muscleById = _.keyBy(createMuscles(), "muscleId");
@@ -45,3 +43,6 @@ export const createCategories = () => {
     })
     return result;
 }
+
+export const muscleItems  = createItems();
+export const muscleCategories  = createCategories();
