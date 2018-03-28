@@ -1,11 +1,13 @@
 var path = require('path');
 var webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['./src/index.ts', './src/scss/main.scss'],
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, './dist/fp'),
+    publicPath: '/dist/fp/',
     filename: 'build.js'
   },
   module: {
@@ -58,14 +60,18 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          // name: '[name].[ext]?[hash]'
+          name: '[name].[ext]'
         }
       }
     ]
   },
-  // plugins: [
-  //   extractSass
-  // ],
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+    // new HtmlWebpackPlugin({
+    //   title: 'Fitness Plan'
+    // })
+  ],
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json', '.css'],
     alias: {

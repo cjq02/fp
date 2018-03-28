@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open",
     "server": "node ../server.js",
     "build": "webpack",
-    "build:prod": "webpack -p",
+    "build:prod": "NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/lodash": "^4.14.106",
     "@types/node": "^9.4.7",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "dateformat": "^3.0.3",
     "dexie": "^2.0.2",
