@@ -95,6 +95,8 @@ module.exports = {
   devtool: 'inline-source-map'
 }
 
+console.log("Current Environment: " + process.env.NODE_ENV);
+
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
