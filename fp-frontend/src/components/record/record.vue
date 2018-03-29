@@ -24,10 +24,10 @@ import * as _ from "lodash";
 import RecordSummaryComponent from "./recordSummary.vue";
 import RecordListComponent from "./recordList.vue";
 import RecordPickerComponent from "./recordPicker.vue";
-import { fpDB } from "../../db/db";
-import { IRecordItem, RecordItem } from "../../model/IRecordItem";
-import { IRecord } from "../../model/IRecord";
-import { ISummary } from "../../model/ISummary";
+import { fpDB } from "db/fpDB";
+import { IRecordItem, RecordItem } from "model/IRecordItem";
+import { IRecord } from "model/IRecord";
+import { ISummary } from "model/ISummary";
 
 let dateFormat = require("dateformat");
 

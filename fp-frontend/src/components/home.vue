@@ -5,7 +5,7 @@
       <v-card-media :src="require(`../assets/images/fitness.jpg`)" height="200px" contain></v-card-media>
       <v-container>
         <v-layout align-center>
-          <v-flex>
+          <v-flex xs12 class="text-xs-center">
             <v-btn outline large color="blue-grey darken-1">History List</v-btn>
             <v-btn outline large color="blue-grey darken-1" @click="gotoPlan">
               Go To Plan

@@ -16,6 +16,15 @@
         "paths": {
             "components/*": [
                 "src/components/*"
+            ],
+            "json/*": [
+                "src/json/*"
+            ],
+            "model/*": [
+                "src/model/*"
+            ],
+            "db/*": [
+                "src/db/*"
             ]
         }
     },

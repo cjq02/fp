@@ -13,7 +13,7 @@
 <script lang="ts">
 import Vue from "vue";
 import PlanCategoryComponent from "./planCategory.vue";
-import { muscleCategories } from "../../json/data";
+import { muscleCategories } from "json/data";
 
 export default Vue.extend({
   components: {

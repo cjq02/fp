@@ -28,7 +28,7 @@
 <script lang="ts">
 import Vue from "vue";
 import * as _ from "lodash";
-import { muscleItems as items } from "../../json/data";
+import { muscleItems as items } from "json/data";
 
 export default Vue.extend({
   props: ["summary"],
