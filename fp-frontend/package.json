@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open",
     "server": "node ../server.js",
     "build": "webpack",
-    "build:prod": "NODE_ENV=production&&webpack -p",
+    "build:prod": "NODE_ENV=production&&webpack",
     "build:dev": "set NODE_ENV=production&&webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
