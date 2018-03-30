@@ -17,6 +17,9 @@
             "components/*": [
                 "src/components/*"
             ],
+            "images/*": [
+                "src/assets/images/*"
+            ],
             "json/*": [
                 "src/json/*"
             ],

@@ -23,7 +23,7 @@ const createItems: () => Array<IItem> = () => {
 }
 
 const createMuscles: () => Array<IMuscle> = () => [
-    { muscleId: 201, muscleName: "Chest" },
+    { muscleId: 201, muscleName: "Chest", active: true },
     { muscleId: 202, muscleName: "Back" },
     { muscleId: 203, muscleName: "Shoulders" },
     { muscleId: 204, muscleName: "Biceps" },
