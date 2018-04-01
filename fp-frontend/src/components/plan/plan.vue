@@ -3,7 +3,6 @@
     <v-flex xs12 sm6 offset-sm3>
         <v-list two-line>
             <v-list-group v-model="category.active" v-for="category in categories" :key="category.muscleId" >
-              <!-- <v-card-title>{{category.muscleName}}</v-card-title> -->
               <v-list-tile slot="activator">
                 <v-list-tile-content>
                   <v-list-tile-title>{{category.muscleName}}</v-list-tile-title>

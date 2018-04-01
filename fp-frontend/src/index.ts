@@ -6,6 +6,7 @@ import './assets/stylus/main.styl'
 import './scss/main.scss'
 import NavComponent from "./components/nav.vue"
 
+
 Vue.use(Vuetify)
 
 const app = new Vue({

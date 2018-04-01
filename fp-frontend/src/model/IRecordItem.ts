@@ -3,7 +3,7 @@ import { ISummary } from './ISummary'
 
 export interface IRecordItem {
   itemId: number,
-  date: number,
+  date: string,
   sync?: boolean,
   summary?: ISummary,
   records?: Array<IRecord>
@@ -11,7 +11,7 @@ export interface IRecordItem {
 
 export class RecordItem implements IRecordItem {
   itemId: number
-  date: number
+  date: string
   sync?: boolean 
   summary?: ISummary
   records?: Array<IRecord>

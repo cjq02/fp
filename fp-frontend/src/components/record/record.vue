@@ -44,7 +44,7 @@ export default Vue.extend({
       itemId: _.parseInt(this.$route.params.itemId),
       currentRecordItem: new RecordItem(),
       summary: {} as ISummary,
-      currentDate: _.parseInt(dateFormat(new Date(), "yyyymmdd"))
+      currentDate: dateFormat(new Date(), "yyyy-mm-dd")
     };
   },
   created() {
@@ -136,9 +136,5 @@ export default Vue.extend({
 .scroll {
   height: 450px;
   overflow-y: scroll;
-}
-
-.align-end {
-  align-items: flex-end;
 }
 </style>

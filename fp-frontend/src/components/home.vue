@@ -5,7 +5,7 @@
       <v-container>
         <v-layout align-center>
           <v-flex xs12 class="text-xs-center">
-            <v-btn outline large color="blue-grey darken-1">History</v-btn>
+            <v-btn outline large color="blue-grey darken-1" @click="gotoHistory">History</v-btn>
             <v-btn outline large color="blue-grey darken-1" @click="gotoPlan">
               Go To Plan
               <span slot="loader" class="custom-loader">
@@ -24,10 +24,13 @@ import Vue from "vue";
 export default Vue.extend({
   data: () => ({
     gradient: "to top, #BDBDBD, #F5F5F5"
-  }), 
+  }),
   methods: {
+    gotoHistory() {
+      this.$router.push({ path: "/history" });
+    },
     gotoPlan() {
-      this.$router.push({path: `/plan`})
+      this.$router.push({ path: `/plan` });
     }
   }
 });
