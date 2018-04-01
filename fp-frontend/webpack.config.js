@@ -96,7 +96,10 @@ module.exports = {
   devtool: 'inline-source-map'
 }
 
+// process.env.NODE_ENV = 'production'
 console.log("Current Environment: " + process.env.NODE_ENV);
+
+console.log(process.env.NODE_ENV === 'production')
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
@@ -108,7 +111,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       compress: {
         warnings: false
       }
