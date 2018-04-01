@@ -21,10 +21,15 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { fpDB } from "db/fpDB";
+
 export default Vue.extend({
   data: () => ({
     gradient: "to top, #BDBDBD, #F5F5F5"
   }),
+  created() {
+    new fpDB().generateTestData();
+  },
   methods: {
     gotoHistory() {
       this.$router.push({ path: "/history" });
