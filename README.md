@@ -26,14 +26,11 @@ Vue2.js + typescript + vuetify + indexedDb + dexie.js
 
    - **%FS_RESOURCE_HOME%:** The root path of your FP resource files
    
-  #### Front-end
-  
+  ##### GO TO FS_FRONTEND_HOME
    npm install
   
   #####  RUN IN DEV
-  
    npm start
   
   #####  RUN IN PROD
-  
    npm run build:prod
