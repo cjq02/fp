@@ -6,7 +6,7 @@
 
 ### Technology Stack:
 
-Vue2.js + typescript + vuetify + indexedDb + dexie.js
+Vue2.js + typescript + vuetify + indexedDB + dexie.js
 
 ### DEV Environment Setup:
 
