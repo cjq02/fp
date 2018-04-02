@@ -10,7 +10,7 @@ Vue2.js + typescript + vuetify + indexedDb + dexie.js
 
 #### Screenshot
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/cjq02/fp/blob/master/fp-resource/screenshot/home.png" height="400"/>
   <img src="https://github.com/cjq02/fp/blob/master/fp-resource/screenshot/history.png" height="400"/>
   <img src="https://github.com/cjq02/fp/blob/master/fp-resource/screenshot/history2.png" height="400"/>
