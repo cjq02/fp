@@ -7,3 +7,7 @@
 ### Technology Stack:
 
 Vue2.js + typescript + vuetify + indexedDb + dexie.js
+
+#### Screenshot
+
+![alt text](https://github.com/cjq02/fp/blob/master/fp-resource/screenshot/history.png)
