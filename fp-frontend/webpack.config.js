@@ -6,8 +6,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: ['./src/index.ts', './src/scss/main.scss'],
   output: {
-    path: path.resolve(__dirname, './dist/fp'),
-    publicPath: '/dist/fp/',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -55,7 +55,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           // name: '[name].[ext]?[hash]'
-          name: '[name].[ext]'
+          name: '/images/[name].[ext]'
         }
       }
     ]

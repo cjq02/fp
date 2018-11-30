@@ -15,6 +15,18 @@
           </v-layout>
       </v-card>
     </v-flex>
+    <!-- <v-dialog v-model="dialog" persistent max-width="290">
+      <v-btn slot="activator" color="primary" dark>Open Dialog</v-btn>
+      <v-card>
+        <v-card-title class="headline">Use Google's location service?</v-card-title>
+        <v-card-text>Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="green darken-1" flat @click="dialog = false">Disagree</v-btn>
+          <v-btn color="green darken-1" flat @click="dialog = false">Agree</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog> -->
   </v-layout>
 </template>
 
@@ -44,7 +56,8 @@ export default Vue.extend({
       itemId: _.parseInt(this.$route.params.itemId),
       currentRecordItem: new RecordItem(),
       summary: {} as ISummary,
-      currentDate: dateFormat(new Date(), "yyyy-mm-dd")
+      currentDate: dateFormat(new Date(), "yyyy-mm-dd"),
+      dialog: false
     };
   },
   created() {

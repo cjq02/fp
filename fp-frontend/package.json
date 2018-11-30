@@ -8,7 +8,7 @@
     "server": "node ../server.js",
     "build": "webpack",
     "build:prod": "export NODE_ENV=production && webpack",
-    "build:dev": "set NODE_ENV=production && webpack",
+    "build:dev": "set NODE_ENV=dev && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -38,7 +38,7 @@
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.2.1",
     "vuetify": "^1.0.8",
-    "webpack": "^3.12.0",
+    "webpack": "^3.11.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^2.0.5",
     "webpack-dev-server": "^3.0.0"

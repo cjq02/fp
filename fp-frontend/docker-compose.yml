@@ -1,0 +1,7 @@
+version: '2'
+services:
+  fp-frontend:
+    image: fp-frontend:latest
+    container_name: c_fp-frontend
+    ports:
+    - "8006:80"
